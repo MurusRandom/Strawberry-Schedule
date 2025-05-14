@@ -1,0 +1,166 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0; 
+  color: #2c3e50; 
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header, footer {
+  background-color: #fc5a8d; 
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+#left, #right, #center {
+  padding: 15px;
+  overflow-y: auto;
+}
+#left, #right {
+  background-color: #ffffff;
+  border-right: 1px solid #dcdde1; 
+  width: 250px;
+}
+#right {
+  border-right: none;
+  border-left: 1px solid #dcdde1;
+}
+#center {
+  flex: 1;
+  background-color: #ecf0f1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h3 {
+  margin-bottom: 10px;
+  color: #c0392b; 
+}
+.menu-button {
+  background-color: #fc5a8d; 
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+.menu-button:hover {
+  background-color: #c0392b; 
+}
+.dropdown { display: none; margin-bottom: 10px; }
+.dropdown button {
+  display: block;
+  margin-bottom: 3px;
+  width: 100%;
+  background-color: #7f8c8d; 
+  color: #ffffff;
+  border: none;
+  padding: 8px;
+  border-radius: 3px;
+}
+dropdown button:hover {
+  background-color: #95a5a6; 
+}
+button#saveBtn,
+button#loadBtn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button#saveBtn {
+  background-color: #27ae60; 
+  color: #ffffff;
+}
+button#saveBtn:hover {
+  background-color: #1e8449;
+}
+button#loadBtn {
+  background-color: #c0392b; 
+  color: #ffffff;
+}
+button#loadBtn:hover {
+  background-color: #922b21;
+}
+form#formDodaj {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+form#formDodaj label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+form#formDodaj input,
+form#formDodaj select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form#formDodaj button[type="submit"] {
+  background-color: #fc5a8d; 
+  color: #ffffff;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+form#formDodaj button[type="submit"]:hover {
+  background-color: #c0392b;
+}
+#scheduleContainer {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+.tabela th,
+.tabela td {
+  border: 1px solid #bbb;
+  padding: 8px;
+  text-align: center;
+}
+.tabela th {
+  background-color: #7f8c8d; 
+  color: #ffffff;
+}
+.tabela td {
+  background-color: #ffffff;
+}
+.tabela.aktywa td {
+  background-color: #ecf0f1;
+}
+.tabela {
+  display: none;
+  width: 100%;
+  border-collapse: collapse;
+}
+.tabela.aktywa {
+  display: table;
+}
